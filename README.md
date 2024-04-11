@@ -69,6 +69,17 @@ To build `Zerotier-Edge` from source, ensure that you have [Rust](https://www.ru
    ./target/release/zerotier-edge
    ```
 
+## Docker
+
+If you really want to use Docker:
+
+```shell
+docker compose up
+
+# get auth token
+docker compose exec zerotier cat /var/lib/zerotier-one/authtoken.secret
+```
+
 ## Similar projects
 
 - [ZeroUI](https://github.com/dec0dOS/zero-ui)
